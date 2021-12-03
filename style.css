@@ -1,5 +1,13 @@
+/*
+Main color: #971135;
+*/
+
 * {
     background-color: #f9fafb;
     color: #374151;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+.main-color {
+    color: #971135;
 }

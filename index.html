@@ -4,33 +4,23 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title>Junod Tax - Coming Soon</title>
-        <link
-            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-            rel="stylesheet"
-        />
+        <title>Junod Tax</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <noscript>
             <strong
-                >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't
-                work properly without JavaScript enabled. Please enable it to
-                continue.</strong
+                >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong
             >
         </noscript>
         <div id="app">
-            <div
-                id="coming-soon"
-                class="container mx-auto flex flex-col antialiased max-h-full"
-            >
-                <img
-                    id="image-wip"
-                    src="./wip.svg"
-                    class="sm:w-1/2 p-4 mx-auto"
-                />
+            <div id="coming-soon" class="container mx-auto flex flex-col antialiased max-h-full">
+                <img id="image-wip" src="./img/wip.svg" class="sm:w-1/2 p-4 mx-auto" />
                 <div id="title" class="mt-3 p-4 text-3xl sm:text-5xl">
-                    <h1 class="text-center font-bold">JUNOD TAX</h1>
+                    <!-- <h1 class="text-center font-bold">JUNOD TAX</h1> -->
+                    <img src="img/logo_large.svg" class="mx-auto max-w-md" />
                 </div>
                 <div id="subtitle" class="p-4 text-l sm:text-2xl">
                     <div class="text-center font-medium">
@@ -39,23 +29,20 @@
                         <p>Business and tax law</p>
                     </div>
                 </div>
-                <div
-                    id="other-info"
-                    class="
-                        mt-4
-                        p-4
-                        text-xs
-                        sm:text-xl
-                        font-medium
-                        text-center
-                        italic
-                    "
-                >
-                    <p class="">
-                        A votre service à partir du 1er janvier 2022.
+                <div id="other-info" class="mt-4 p-4 text-xs sm:text-xl font-medium text-center italic">
+                    <p>
+                        A votre service à partir du
+                        <span class="main-color font-bold">1er janvier 2022</span>.
                     </p>
-                    <p class="">Wir sind ab dem 1. Januar 2022 für Sie da.</p>
-                    <p class="">We start January 1, 2022.</p>
+                    <p>
+                        Wir sind ab dem
+                        <span class="main-color font-bold">1. Januar 2022</span>
+                        für Sie da.
+                    </p>
+                    <p>
+                        We start
+                        <span class="main-color font-bold">January 1, 2022</span>.
+                    </p>
                 </div>
             </div>
         </div>
