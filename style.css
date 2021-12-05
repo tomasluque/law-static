@@ -3,11 +3,37 @@ Main color: #971135;
 */
 
 * {
-    background-color: #f9fafb;
-    color: #374151;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.main-color {
+body {
+    background-color: #f9fafb;
+    color: #374151;
+}
+
+.main-color-text {
+    color: #971135;
+}
+
+.main-color-text-black {
+    color: #374151;
+}
+
+.main-color-border-bottom {
+    border-bottom-color: #971135;
+}
+.main-color-border-top {
+    border-top-color: #971135;
+}
+.main-color-border-left {
+    border-left-color: #971135;
+}
+.main-color-border-right {
+    border-right-color: #971135;
+}
+.main-color-border-all {
+    border-color: #971135;
+}
+.main-color-hover:hover {
     color: #971135;
 }
