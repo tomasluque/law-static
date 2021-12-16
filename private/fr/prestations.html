@@ -8,7 +8,7 @@
         <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
         <link rel="stylesheet" href="/style.css" />
     </head>
-    <body>
+    <body class="flex flex-col min-h-screen">
         <nav class="bg-white border-b-2 main-color-border-bottom">
             <div class="hidden md:flex container mx-auto flex flex-wrap items-center justify-between">
                 <a href="index.html">
@@ -73,25 +73,27 @@
                         <span class="block text-sm px-2 py-3 text-gray-500">
                             <a class="font-bold" href="" onclick="return false">fr</a>
                             |
-                            <a href="../de/equipe.html">de</a>
+                            <a href="../de/prestations.html">de</a>
                             |
-                            <a href="../en/equipe.html">en</a>
+                            <a href="../en/prestations.html">en</a>
                         </span>
                     </li>
                 </ul>
             </div>
         </nav>
-        <main class="mb-3">
-            <div>
+        <main class="mb-3 flex-1">
+            <div class="hidden md:flex">
                 <img src="/img/banner-2.jpg" alt="" />
             </div>
-            <div class="container mx-auto my-12">
+            <div class="container mx-4 md:mx-auto my-6 md:my-12">
                 <h1 class="text-4xl custom-title-font font-bold">Nos prestations</h1>
             </div>
-            <div class="container flex flex-col justify-center items-center mx-auto">
+            <div class="container flex flex-col justify-center items-center mx-1 md:mx-auto">
                 <div class="m-2 w-full rounded-r-md bg-white flex shadow">
                     <div class="w-full flex flex-col auto-rows-max px-3 py-5 accordion">
-                        <h1 class="text-2xl font-bold main-color-text">Conseil fiscal aux entreprises <span class="arrow float-right mr-3">∨</span></h1>
+                        <h1 class="text-xl md:text-2xl font-bold main-color-text">
+                            Conseil fiscal aux entreprises <span class="arrow float-right mr-3">∨</span>
+                        </h1>
                         <div class="flex-1 panel">
                             <p class="text-gray-500 px-3 py-5">
                                 Notre expertise se concentre sur les questions fiscales et juridiques de l'entreprise et de l'entrepreneur. Par cette
@@ -147,7 +149,7 @@
                 </div>
                 <div class="m-2 w-full rounded-r-md bg-white flex shadow">
                     <div class="w-full flex flex-col auto-rows-max px-3 py-5 accordion">
-                        <h1 class="text-2xl font-bold main-color-text">
+                        <h1 class="text-xl md:text-2xl font-bold main-color-text">
                             Conseil relatif à la taxe sur la valeur ajoutée (TVA)<span class="arrow float-right mr-3">∨</span>
                         </h1>
                         <div class="flex-1 panel">
@@ -181,7 +183,9 @@
 
                 <div class="m-2 w-full rounded-r-md bg-white flex shadow">
                     <div class="w-full flex flex-col auto-rows-max px-3 py-5 accordion">
-                        <h1 class="text-2xl font-bold main-color-text">Conseil fiscal aux personnes physiques<span class="arrow float-right mr-3">∨</span></h1>
+                        <h1 class="text-xl md:text-2xl font-bold main-color-text">
+                            Conseil fiscal aux personnes physiques<span class="arrow float-right mr-3">∨</span>
+                        </h1>
                         <div class="flex-1 panel">
                             <ol class="list-disc pl-6 pb-3 main-color-text leading-7">
                                 <li>
@@ -215,7 +219,7 @@
                 </div>
                 <div class="m-2 w-full rounded-r-md bg-white flex shadow">
                     <div class="w-full flex flex-col auto-rows-max px-3 py-5 accordion">
-                        <h1 class="text-2xl font-bold main-color-text">Conseil juridique<span class="arrow float-right mr-3">∨</span></h1>
+                        <h1 class="text-xl md:text-2xl font-bold main-color-text">Conseil juridique<span class="arrow float-right mr-3">∨</span></h1>
                         <div class="flex-1 panel">
                             <ol class="list-disc pl-6 pb-3 main-color-text leading-7">
                                 <li>
@@ -245,7 +249,7 @@
 
                 <div class="m-2 w-full rounded-r-md bg-white flex shadow">
                     <div class="w-full flex flex-col auto-rows-max px-3 py-5 accordion">
-                        <h1 class="text-2xl font-bold main-color-text">Autres services<span class="arrow float-right mr-3">∨</span></h1>
+                        <h1 class="text-xl md:text-2xl font-bold main-color-text">Autres services<span class="arrow float-right mr-3">∨</span></h1>
                         <div class="flex-1 panel">
                             <p class="text-gray-500 mb-6">
                                 Autres prestations dans le domaine de la propriété intellectuelle (PI, en collaboration avec un cabinet externe de conseillers

@@ -10,7 +10,7 @@
     </head>
     <body class="flex flex-col min-h-screen">
         <nav class="bg-white border-b-2 main-color-border-bottom">
-            <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <div class="hidden md:flex container mx-auto flex flex-wrap items-center justify-between">
                 <a href="index.html">
                     <img src="/img/logo_large.svg" class="h-10 my-3" alt="" />
                 </a>
@@ -38,6 +38,53 @@
                 </div>
             </div>
         </nav>
+        <div class="md:hidden container mx-auto flex flex-wrap items-center justify-between">
+            <a class="px-4 py-3" href="index.html">
+                <img src="/img/logo_large.svg" class="h-10 my-3" alt="" />
+            </a>
+            <button class="float-right outline-none mobile-menu-button p-4">
+                <svg
+                    class="w-6 h-6 main-color-text"
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li>
+                    <a href="index.html" class="block text-sm px-2 py-3">Home</a>
+                </li>
+                <li>
+                    <a href="prestations.html" class="block text-sm px-2 py-3">Unsere Leistungen</a>
+                </li>
+                <li>
+                    <a href="equipe.html" class="block text-sm px-2 py-3">Unser Team</a>
+                </li>
+                <li>
+                    <a href="entreprise.html" class="block text-sm px-2 py-3">Firma</a>
+                </li>
+                <li>
+                    <a href="" onclick="return false" class="block text-sm px-2 py-3 main-color-text font-bold">Kontakt</a>
+                </li>
+                <li class="">
+                    <span class="block text-sm px-2 py-3 text-gray-500">
+                        <a href="../fr/contact.html">fr</a>
+                        |
+                        <a class="font-bold" href="" onclick="return false">de</a>
+                        |
+                        <a href="../en/contact.html">en</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
         <main class="flex-1">
             <div class="w-full h-2/5">
                 <iframe
@@ -46,8 +93,8 @@
                     style="border: 0; height: 100%; width: 100%"
                 ></iframe>
             </div>
-            <div class="container mx-auto my-6">
-                <h1 class="text-4xl custom-title-font font-bold">Senden Sie uns Ihre Anfrage</h1>
+            <div class="container mx-4 md:mx-auto my-3 md:my-12">
+                <h1 class="text-2xl md:text-4xl custom-title-font font-bold">Senden Sie uns Ihre Anfrage</h1>
             </div>
             <div class="container mx-auto">
                 <div class="flex flex-wrap flex-row justify-center">
@@ -73,5 +120,15 @@
                 </div>
             </div>
         </footer>
+        <script>
+            // Grab HTML Elements
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            // Add Event Listeners
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
     </body>
 </html>

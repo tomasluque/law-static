@@ -8,7 +8,7 @@
         <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
         <link rel="stylesheet" href="/style.css" />
     </head>
-    <body>
+    <body class="flex flex-col min-h-screen">
         <nav class="bg-white border-b-2 main-color-border-bottom">
             <div class="hidden md:flex container mx-auto flex flex-wrap items-center justify-between">
                 <a href="index.html">
@@ -84,11 +84,14 @@
             </div>
         </nav>
         <main class="flex-1">
-            <div>
+            <div class="hidden md:flex">
                 <img src="/img/banner.jpg" alt="" />
             </div>
-            <div class="container mx-auto flex flex-wrap mt-10">
-                <div class="flex-1 m-2 bg-white rounded-md shadow flex flex-col">
+            <div class="container mx-4 md:mx-auto my-6 md:my-12">
+                <h1 class="text-4xl custom-title-font font-bold">Notre équipe</h1>
+            </div>
+            <div class="container mx-auto flex flex-wrap md:mt-10">
+                <div class="md:flex-1 m-2 bg-white rounded-md shadow flex flex-col">
                     <a href="etienne-junod.html">
                         <div><img src="/img/card-etienne.jpg" class="rounded-t-md" /></div>
                         <div class="m-3">
@@ -100,7 +103,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex-1 m-2 bg-white rounded-md shadow flex flex-col">
+                <div class="md:flex-1 m-2 bg-white rounded-md shadow flex flex-col">
                     <a href="isabelle-junod.html">
                         <div><img src="/img/card-isabelle.jpg" class="rounded-t-md" /></div>
                         <div class="m-3">
@@ -112,7 +115,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex-1 m-2 bg-white rounded-md shadow flex flex-col">
+                <div class="md:flex-1 m-2 bg-white rounded-md shadow flex flex-col">
                     <a href="monika-hess.html">
                         <div><img src="/img/card-monika.jpg" class="rounded-t-md" /></div>
                         <div class="m-3">
