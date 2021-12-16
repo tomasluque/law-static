@@ -10,7 +10,7 @@
     </head>
     <body class="flex flex-col min-h-screen">
         <nav class="bg-white border-b-2 main-color-border-bottom">
-            <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <div class="hidden md:flex container mx-auto flex flex-wrap items-center justify-between">
                 <a href="" onclick="return false">
                     <img src="/img/logo_large.svg" class="h-10 my-3" alt="" />
                 </a>
@@ -37,13 +37,60 @@
                     </ul>
                 </div>
             </div>
+            <div class="md:hidden container mx-auto flex flex-wrap items-center justify-between">
+                <a class="px-4 py-3" href="" onclick="return false">
+                    <img src="/img/logo_large.svg" class="h-10 my-3" alt="" />
+                </a>
+                <button class="float-right outline-none mobile-menu-button p-4">
+                    <svg
+                        class="w-6 h-6 main-color-text"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li>
+                        <a href="" onclick="return false" class="block text-sm px-2 py-3 main-color-text font-bold">Home</a>
+                    </li>
+                    <li>
+                        <a href="prestations.html" class="block text-sm px-2 py-3">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="equipe.html" class="block text-sm px-2 py-3">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="entreprise.html" class="block text-sm px-2 py-3">Company</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block text-sm px-2 py-3">Contact</a>
+                    </li>
+                    <li class="">
+                        <span class="block text-sm px-2 py-3 text-gray-500">
+                            <a href="../fr">fr</a>
+                            |
+                            <a href="../de">de</a>
+                            |
+                            <a class="font-bold" href="" onclick="return false">en</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <main class="flex-1">
-            <div>
+            <div class="hidden md:flex">
                 <img src="/img/banner-index.jpg" alt="" />
             </div>
-            <div class="container mx-auto flex flex-wrap mt-10">
-                <div class="flex-1 m-2 bg-white rounded-md shadow flex flex-col">
+            <div class="container mx-auto flex flex-wrap mt-3 md:mt-10">
+                <div class="md:flex-1 m-2 bg-white rounded-md shadow flex flex-col">
                     <a href="etienne-junod.html">
                         <div><img src="/img/card-etienne.jpg" class="rounded-t-md" /></div>
                         <div class="m-3">
@@ -58,7 +105,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex-1 m-2 bg-white rounded-md shadow flex flex-col">
+                <div class="md:flex-1 m-2 bg-white rounded-md shadow flex flex-col">
                     <a href="prestations.html">
                         <div><img src="/img/logo-box.png" class="rounded-t-md" /></div>
                         <div class="m-3">
@@ -70,7 +117,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex-1 m-2 bg-white rounded-md shadow flex flex-col">
+                <div class="md:flex-1 m-2 bg-white rounded-md shadow flex flex-col">
                     <a href="prestations.html">
                         <div><img src="/img/card-entreprise.jpg" class="rounded-t-md" /></div>
                         <div class="m-3">
@@ -91,5 +138,15 @@
                 </div>
             </div>
         </footer>
+        <script>
+            // Grab HTML Elements
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            // Add Event Listeners
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
     </body>
 </html>
