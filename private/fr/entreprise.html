@@ -24,7 +24,7 @@
                         </li>
                         <li class="text-xl py-3 main-color-hover"><a href="equipe.html">Notre équipe</a></li>
                         <li class="text-xl py-3 main-color-text font-bold">
-                            <a href="" onclick="return false">Entreprise</a>
+                            <a href="" onclick="return false">Notre profil</a>
                         </li>
                         <li class="text-xl py-3 main-color-hover"><a href="contact.html">Contact</a></li>
                         <li class="text-xl py-3">
@@ -70,7 +70,7 @@
                         <a href="equipe.html" class="block text-sm px-2 py-3">Notre équipe</a>
                     </li>
                     <li>
-                        <a href="" onclick="return false" class="block text-sm px-2 py-3 main-color-text font-bold">Entreprise</a>
+                        <a href="" onclick="return false" class="block text-sm px-2 py-3 main-color-text font-bold">Notre profil</a>
                     </li>
                     <li>
                         <a href="contact.html" class="block text-sm px-2 py-3">Contact</a>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="md:flex-1 m-2 rounded-md bg-white flex justify-center shadow">
                         <div class="flex flex-col auto-rows-max px-3 py-5">
-                            <h1 class="text-2xl font-bold main-color-text mb-5">Valeur ajoutée</h1>
+                            <h1 class="text-2xl font-bold main-color-text mb-5">Indépendance</h1>
                             <div class="flex-1">
                                 <p class="text-gray-500">
                                     Nous attachons une grande importance à notre indépendance. JUNOD TAX évite tous conflits d'intérêt potentiels et respecte
@@ -138,13 +138,14 @@
                 <div class="flex flex-wrap justify-center">
                     <div class="md:flex-1 m-2 rounded-md bg-white flex justify-center shadow">
                         <div class="flex flex-col auto-rows-max px-3 py-5">
-                            <h1 class="text-2xl font-bold main-color-text mb-5">Indépendance</h1>
+                            <h1 class="text-2xl font-bold main-color-text mb-5">Valeur ajoutée</h1>
                             <div class="flex-1">
                                 <p class="text-gray-500">
-                                    Nous attachons une grande importance à notre indépendance. JUNOD TAX évite tous conflits d'intérêt potentiels et respecte
-                                    les règles de la profession. Le travail en petite équipe en impliquant les spécialistes nécessaires, au besoin venus de
-                                    l'extérieur et après consultation du client, nous permet d'intégrer le savoir-faire indispensable au succès des missions.
-                                    Nous recherchons continuellement la flexibilité et nous nous efforçons d'être disponibles pour nos clients en tout temps.
+                                    JUNOD TAX met toutes ses compétences à votre profit, tout en utilisant ses réseaux locaux, nationaux et internationaux. Nous
+                                    recherchons continuellement des solutions globales et innovatrices, mais nous renonçons à dessein à des succès rapides sans
+                                    effet durable. Les besoins du client étant au centre de nos préoccupations, nous recherchons dans la discussion les éléments
+                                    déterminants qui nous permettront de vous fournir des prestations sur mesure. Le secret professionnel nous oblige à la plus
+                                    grande discrétion.
                                 </p>
                             </div>
                         </div>
@@ -154,7 +155,8 @@
                             <h1 class="text-2xl font-bold main-color-text mb-5">Honoraires</h1>
                             <div class="flex-1">
                                 <p class="text-gray-500">
-                                    La formation continue représente un facteur essentiel, afin de vous fournir sans cesse une prestation de premier choix.
+                                    Nos honoraires sont calculés en fonction du temps consacré et de l'expérience des collaborateurs engagés. Nous nous
+                                    engageons à la transparence et l'efficacité en termes de coûts.
                                 </p>
                             </div>
                         </div>
@@ -179,6 +181,29 @@
                 </div>
             </div>
         </footer>
+        <script>
+            let accordion = document.getElementsByClassName("accordion");
+            for (let elem of accordion) {
+                elem.addEventListener("click", function () {
+                    this.parentElement.classList.toggle("border-l-2");
+                    this.parentElement.classList.toggle("main-color-border-all");
+
+                    let arrow = this.querySelector(".arrow");
+                    if (arrow.innerHTML == "∧") {
+                        arrow.innerHTML = "∨";
+                    } else {
+                        arrow.innerHTML = "∧";
+                    }
+
+                    let panel = this.querySelector(".panel");
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
         <script>
             // Grab HTML Elements
             const btn = document.querySelector("button.mobile-menu-button");
