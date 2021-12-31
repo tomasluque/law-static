@@ -2,19 +2,14 @@ BEGIN:VCARD
 VERSION:2.1
 N:Junod;Etienne
 FN:Etienne Junod
-ORG;CHARSET=Windows-1252:JUNOD TAX fiscalité et droit des affaires
-TITLE;CHARSET=Windows-1252:Avocat et expert fiscal diplômé
+ORG;CHARSET=Windows-1252:JUNOD TAX fiscalitï¿½ et droit des affaires
+TITLE;CHARSET=Windows-1252:Avocat et expert fiscal diplï¿½mï¿½
 TEL;WORK;VOICE:+41 32 329 30 82
 ADR;WORK;PREF;CHARSET=Windows-1252;ENCODING=QUOTED-PRINTABLE:;;Rue G=E9n=E9ral-Dufour 4=0D=0A=
 Case postale 528;Biel/Bienne;;2501;Suisse
 LABEL;WORK;PREF;CHARSET=Windows-1252;ENCODING=QUOTED-PRINTABLE:Rue G=E9n=E9ral-Dufour 4=0D=0A=
 Case postale 528=0D=0A=
 2501 Biel/Bienne
-ADR;HOME;ENCODING=QUOTED-PRINTABLE:;;General-Dufour-Strasse 4=0D=0A=
-Postfach 3176;Biel/Bienne 3;;CH-2500;Suisse
-LABEL;HOME;ENCODING=QUOTED-PRINTABLE:General-Dufour-Strasse 4=0D=0A=
-Postfach 3176=0D=0A=
-CH-2500 Biel/Bienne 3
 X-MS-OL-DEFAULT-POSTAL-ADDRESS:2
 URL;WORK:www.junodtax.ch
 EMAIL;PREF;INTERNET:etienne.junod@junodtax.ch
