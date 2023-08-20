@@ -1,0 +1,635 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Junod Tax</title>
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <nav class="bg-white border-b-2 main-color-border-bottom">
+            <div
+                class="hidden md:flex container mx-auto flex flex-wrap items-center justify-between"
+            >
+                <a href="index.html">
+                    <img src="/img/logo_large.svg" class="h-10 my-3" alt="" />
+                </a>
+                <div class="">
+                    <ul
+                        class="flex-row flex space-x-8 mt-0 text-sm font-medium"
+                    >
+                        <li class="text-xl py-3 main-color-hover">
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li class="text-xl py-3 main-color-hover">
+                            <a href="prestations.html">Prestations</a>
+                        </li>
+                        <li class="text-xl py-3 main-color-hover">
+                            <a href="equipe.html">Notre équipe</a>
+                        </li>
+                        <li class="text-xl py-3 main-color-hover">
+                            <a href="entreprise.html">Notre profil</a>
+                        </li>
+                        <li class="text-xl py-3 main-color-hover">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li class="text-xl py-3">
+                            <span class="text-sm text-gray-500">
+                                <a
+                                    class="font-bold"
+                                    href=""
+                                    onclick="return false"
+                                    >fr</a
+                                >
+                                |
+                                <a href="../de/data.html">de</a>
+                                |
+                                <a href="../en/data.html">en</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="md:hidden container mx-auto flex flex-wrap items-center justify-between"
+            >
+                <a class="px-4 py-3" href="index.html">
+                    <img src="/img/logo_large.svg" class="h-10 my-3" alt="" />
+                </a>
+                <button class="float-right outline-none mobile-menu-button p-4">
+                    <svg
+                        class="w-6 h-6 main-color-text"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="border-b">
+                        <a
+                            href="index.html"
+                            class="text-center block text-sm px-2 py-3"
+                            >Accueil</a
+                        >
+                    </li>
+                    <li class="border-b">
+                        <a
+                            href="prestations.html"
+                            class="text-center block text-sm px-2 py-3"
+                            >Prestations</a
+                        >
+                    </li>
+                    <li class="border-b">
+                        <a
+                            href="equipe.html"
+                            class="text-center block text-sm px-2 py-3"
+                            >Notre équipe</a
+                        >
+                    </li>
+                    <li class="border-b">
+                        <a
+                            href="entreprise.html"
+                            class="text-center block text-sm px-2 py-3"
+                            >Notre profil</a
+                        >
+                    </li>
+                    <li class="border-b">
+                        <a
+                            href=""
+                            onclick="return false"
+                            class="text-center block text-sm px-2 py-3 main-color-text font-bold"
+                            >Contact</a
+                        >
+                    </li>
+                    <li class="">
+                        <span
+                            class="text-center block text-sm px-2 py-3 text-gray-500"
+                        >
+                            <a class="font-bold" href="" onclick="return false"
+                                >fr</a
+                            >
+                            |
+                            <a href="../de/contact.html">de</a>
+                            |
+                            <a href="../en/contact.html">en</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="flex-1">
+            <div class="text-gray-500 w-3/5 container mx-auto my-3">
+                <p class="font-bold mt-5 mb-3">
+                    Déclaration de protection des données
+                </p>
+                <p class="text-sm mt-1">
+                    Dans cette déclaration de protection des données, nous,
+                    JUNOD TAX (CHE-159.038.767), raison individuelle de droit
+                    suisse (ci-après JUNOD TAX), décrivons comment nous
+                    collectons et traitons les données à caractère personnel.
+                    Cette déclaration de protection des données ne constitue pas
+                    une description exhaustive ; le cas échéant, d’autres
+                    déclarations relatives à la protection des données règlent
+                    d’autres circonstances spécifiques. Aux fins de la présente
+                    déclaration de protection des données, on entend par données
+                    à caractère personnel toutes les indications qui se
+                    rapportent à une personne identifiée ou
+                    identifiable.Déclaration de protection des données Dans
+                    cette déclaration de protection des données, nous, JUNOD TAX
+                    (CHE-159.038.767), raison individuelle de droit suisse
+                    (ci-après JUNOD TAX), décrivons comment nous collectons et
+                    traitons les données à caractère personnel. Cette
+                    déclaration de protection des données ne constitue pas une
+                    description exhaustive ; le cas échéant, d’autres
+                    déclarations relatives à la protection des données règlent
+                    d’autres circonstances spécifiques. Aux fins de la présente
+                    déclaration de protection des données, on entend par données
+                    à caractère personnel toutes les indications qui se
+                    rapportent à une personne identifiée ou identifiable.
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    1. Organe responsable et contact
+                </p>
+                <p class="text-sm mt-1">
+                    Si rien d’autre n’est indiqué dans le cas individuel, JUNOD
+                    TAX est responsable des traitements des données que nous
+                    décrivons ici. Les demandes concernant la protection des
+                    données peuvent nous être adressées par courrier ou par
+                    e-mail, accompagnées d’une copie de la carte d’identité ou
+                    du passeport permettant d’identifier l’utilisateur. Nos
+                    coordonnées se trouvent sur le site internet
+                    https://www.junodtax.ch/fr/contact.html.
+                </p>
+                <p class="text-sm mt-5 font-bold">
+                    2. Collecte et traitement des données personnelles
+                </p>
+                <p class="text-sm mt-1">
+                    Nous traitons des données personnelles dans les catégories
+                    suivantes de traitement :<br />- données de clients auxquels
+                    nous fournissons ou avons fourni des prestations<br />-
+                    données personnelles que nous avons reçues indirectement de
+                    nos clients dans le cadre de la fourniture de services ; le
+                    traitement de ces données se limite à celles absolument
+                    nécessaires au traitement du mandat conféré par le client ;
+                    ces données ne sont pas utilisées à d’autres fins<br />-
+                    lorsque nous communiquons ou qu’une visite a lieu<br />- en
+                    cas d’autre relation contractuelle, p.ex. en tant que
+                    fournisseur, prestataire de services ou conseiller<br />- en
+                    cas de candidatures pour un poste<br />- lorsque nous sommes
+                    tenus de traiter les données pour des raisons légales ou
+                    réglementaires<br />- lorsque nous exerçons notre obligation
+                    de diligence ou défendons d’autres intérêts légitimes, p.
+                    ex. pour éviter les conflits d’intérêts, prévenir le
+                    blanchiment d’argent ou d’autres risques, garantir
+                    l’exactitude des données, vérifier la solvabilité, assurer
+                    la sécurité ou faire valoir nos droits. <br /><br />Vous
+                    trouverez des informations plus détaillées dans la
+                    description de la catégorie de traitement concernée au
+                    chiffre 5.
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    3. Catégories de données personnelles
+                </p>
+                <p class="text-sm mt-1">
+                    Les données personnelles que nous traitons sont fonction de
+                    la relation que vous entretenez avec nous et du but dans
+                    lequel nous traitons ces données. Outre vos coordonnées,
+                    nous traitons également d&#39;autres informations sur vous
+                    ou sur des personnes qui sont en relation avec vous. Selon
+                    les circonstances, il peut s’agir aussi de données
+                    particulièrement sensibles. <br /><br />Nous collectons les
+                    catégories de données personnelles suivantes en fonction de
+                    la finalité pour laquelle elles seront traitées par nos
+                    soins : <br />- coordonnées (p. ex. nom, prénom, adresse,
+                    numéro de téléphone, adresse e-mail) <br />- Informations
+                    clients (p. ex. date de naissance, nationalité, état civil,
+                    profession, titre, description de fonction, numéro de
+                    passeport ou de carte d’identité, numéro AVS) <br />-
+                    informations financières (p. ex. coordonnées bancaires)
+                    <br />- données de mandat, en fonction du mandat (p. ex.
+                    informations fiscales, statuts, procès- verbaux, contrats,
+                    données des collaborateurs (p. ex. salaire, assurances
+                    sociales), données comptables, ayant droit économique,
+                    rapports de propriété) Si cela est permis, nous collectons
+                    également certaines données auprès de sources accessibles au
+                    public (p. ex. registre des poursuites, registres fonciers,
+                    presse, internet) ou en recevons de nos mandants et de leurs
+                    collaborateurs, des autorités, des tribunaux (d’arbitrage)
+                    et d’autres tiers. En plus des données que vous nous
+                    fournissez directement, les catégories de données
+                    personnelles que nous recevons de tiers à votre sujet
+                    comprennent notamment des données issues de registres
+                    publics, des données dont nous avons connaissance dans le
+                    cadre de procédures administratives et judiciaires, des
+                    données en lien avec vos fonctions et activités
+                    professionnelles (afin que, avec votre aide, nous puissions
+                    p. ex. conclure et traiter des affaires avec votre
+                    employeur), des données vous concernant dans la
+                    correspondance et les entretiens avec des tiers, des
+                    informations sur la solvabilité, des données à votre sujet
+                    que des personnes de votre entourage (famille, conseiller,
+                    représentant juridique, etc.) nous donnent afin que nous
+                    puissions conclure ou traiter des contrats avec vous ou en
+                    faisant appel à vous (p. ex. références, votre adresse pour
+                    les livraisons, procurations), des données portant sur le
+                    respect des prescriptions légales comme la lutte contre le
+                    blanchiment d’argent et les restrictions d’exportation, des
+                    données de banques, assurances, partenaires de distribution
+                    et autres partenaires contractuels de notre organisation en
+                    vue de l’utilisation ou de la fourniture de prestations de
+                    votre part (p. ex. paiements effectués, achats réalisés),
+                    des données issues des médias et d’internet vous concernant
+                    (dans la mesure où cela est indiqué dans un cas concret,
+                    p. ex. dans le cadre d’une candidature, etc.), vos adresses.
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    4. Buts du traitement des données et base juridique
+                </p>
+                <p class="text-sm mt-3 font-bold">
+                    4.1. Fourniture de prestations de services
+                </p>
+
+                <p class="text-sm mt-1">
+                    Nous traitons en premier lieu des données personnelles que
+                    nous recevons, dans le cadre de nos relations de mandat avec
+                    nos clients et d’autres relations contractuelles avec des
+                    partenaires commerciaux, de la part de ceux-ci et d’autres
+                    personnes impliquées.<br /><br />
+                    Les données personnelles de nos clients sont notamment les
+                    informations suivantes : <br />- coordonnées (p. ex. nom,
+                    prénom, adresse, numéro de téléphone, e-mail, autres
+                    coordonnées) <br />- informations personnelles (p. ex. date
+                    de naissance, nationalité, état civil, profession, titre,
+                    description de fonction, numéro de passeport ou de carte
+                    d’identité, numéro AVS, situation familiale, etc.) <br />-
+                    informations financières (p. ex. coordonnées bancaires,
+                    investissements ou participations) <br />- données de
+                    mandat, en fonction du mandat, p. ex. informations fiscales,
+                    statuts, procès- verbaux, données des collaborateurs (p. ex.
+                    salaire, assurances sociales), données comptables, etc.
+                    <br />- données personnelles particulièrement sensibles :
+                    parmi ces données personnelles peuvent aussi se trouver des
+                    données personnelles particulièrement sensibles, comme des
+                    données ayant trait à la santé, des données dont peuvent
+                    ressortir des opinions religieuses ou des informations
+                    concernant des mesures sociales, notamment lorsque nous
+                    fournissons des prestations dans les domaines de la
+                    déclaration d’impôt. <br /><br />Nous traitons ces données
+                    personnelles aux fins décrites, en nous appuyant sur les
+                    bases juridiques suivantes : <br />- conclusion ou exécution
+                    d’un contrat avec la personne concernée ou en sa faveur, y
+                    c. la préparation du contrat et son exécution éventuelle
+                    (p. ex. conseil) <br />- préservation d’intérêts légitimes
+                    (p. ex. à des fins administratives, pour améliorer notre
+                    qualité, assurer la sécurité, procéder à la gestion des
+                    risques, faire valoir nos droits, nous défendre contre des
+                    réclamations ou examiner des conflits d’intérêts potentiels)
+                </p>
+
+                <p class="text-sm mt-3 font-bold">
+                    4.2. Traitement indirect des données provenant de la
+                    fourniture de prestations
+                </p>
+
+                <p class="text-sm mt-1">
+                    Lorsque nous fournissons des prestations à nos clients, il
+                    se peut que nous traitions également des données
+                    personnelles de tiers ou des données que nous n’avons pas
+                    collectées directement auprès des personnes concernées. Ces
+                    tiers sont en général des collaborateurs, des personnes de
+                    contact, des membres de la famille ou des personnes qui sont
+                    en relation avec les clients ou les personnes concernées
+                    pour d’autres raisons. Nous avons besoin de ces données
+                    personnelles afin d’exécuter des contrats conclus avec nos
+                    clients. Ces données personnelles nous sont transmises par
+                    nos clients ou par des tiers qu’ils ont mandatés. Il incombe
+                    à nos clients d’informer les tiers dont nous traitons les
+                    informations à cette fin que nous traitons leurs données.
+                    Pour cela, nos clients peuvent faire référence à la présente
+                    déclaration de protection des données. <br /><br />En ce qui
+                    concerne les données personnelles des personnes en relation
+                    avec nos clients, il s’agit en particulier des informations
+                    suivantes : <br />- coordonnées (p. ex. nom, prénom,
+                    adresse, numéro de téléphone, e-mail, autres coordonnées,
+                    données marketing) <br />- informations personnelles (p. ex.
+                    date de naissance, nationalité, état civil, profession,
+                    titre, description de fonction, numéro de passeport ou de
+                    carte d’identité, numéro AVS, situation familiale, etc.)
+                    <br />- informations financières (p. ex. coordonnées
+                    bancaires, investissements ou participations) <br />-
+                    données de mandat, en fonction du mandat, p. ex.
+                    informations fiscales, statuts, procès- verbaux, données des
+                    collaborateurs (p. ex. salaire, assurances sociales),
+                    données comptables <br />- données personnelles
+                    particulièrement sensibles : parmi ces données personnelles
+                    peuvent aussi se trouver des données personnelles
+                    particulièrement sensibles, comme des données ayant trait à
+                    la santé, des données dont peuvent ressortir des opinions
+                    religieuses ou des informations concernant des mesures
+                    sociales, notamment lorsque nous fournissons des prestations
+                    dans les domaines du traitement des salaires ou de la
+                    comptabilité.<br /><br />Nous traitons ces données
+                    personnelles aux fins décrites, en nous appuyant sur les
+                    bases juridiques suivantes : <br />- conclusion ou exécution
+                    d’un contrat avec la personne concernée ou en sa faveur
+                    (p. ex. quand nous assumons nos obligations contractuelles)
+                    <br />- préservation d’intérêts légitimes, notamment notre
+                    intérêt à fournir une prestation optimale à nos clients.
+                </p>
+
+                <p class="text-sm mt-3 font-bold">
+                    4.3. Utilisation de notre site internet
+                </p>
+
+                <p class="text-sm mt-1">
+                    Pour utiliser notre site internet, il n’est pas nécessaire
+                    de divulguer des données personnelles. Nous ne recueillons
+                    aucune information sur l’utilisateur.
+                </p>
+
+                <p class="text-sm mt-3 font-bold">
+                    4.4. Communication directe et visites
+                </p>
+                <p class="text-sm mt-1">
+                    Lorsque vous entrez en contact avec nous (p. ex. par
+                    téléphone, e-mail ou chat) ou si nous vous contactons, nous
+                    traitons les données personnelles nécessaires à ce contact.
+                    Nous traitons ces données personnelles également lorsque
+                    vous nous rendez visite. Dans ce cas, il se peut que vous
+                    deviez communiquer vos coordonnées avant votre visite ou les
+                    laisser à la réception. Nous les conserverons pendant un
+                    certain temps afin de protéger notre infrastructure et nos
+                    informations. <br /><br />Pour l’organisation de conférences
+                    téléphoniques, de réunions en ligne, de vidéoconférences
+                    et/ou de webinaires (« Online-Meetings »), nous utilisons le
+                    service « Microsoft Teams ». <br /><br />Pour cela, nous
+                    traitons en particulier les informations suivantes : <br />-
+                    coordonnées (p. ex. nom, prénom, adresse, numéro de
+                    téléphone, adresse e-mail) <br />- données secondaires sur
+                    la communication (p. ex. adresse IP, durée de la
+                    communication, canal de communication) <br />- à titre
+                    exceptionnel et après consentement exprès de
+                    l’interlocuteur, enregistrements de conversations, p. ex.
+                    lors de vidéoconférences <br />- autres informations que
+                    l’utilisateur téléverse pendant l’utilisation du service de
+                    vidéoconférence, fournit ou crée ainsi que méta-données
+                    utilisées pour la maintenance du service fourni ; des
+                    renseignements supplémentaires sur le traitement des données
+                    à caractère personnel par Microsoft Teams se trouvent dans
+                    les déclarations de protection des données de ces services.
+                    <br />- informations personnelles (p. ex. profession,
+                    fonction, titre, entreprise de l’employeur) <br />- moment
+                    et raison de la visite. <br /><br />Nous traitons ces
+                    données personnelles aux fins décrites, en nous appuyant sur
+                    les bases juridiques suivantes : <br />- exécution d’une
+                    obligation contractuelle avec la personne concernée ou en sa
+                    faveur, y c. la préparation du contrat et son éventuelle
+                    exécution (fourniture d’une prestation de services) <br />-
+                    préservation d’intérêts légitimes (p. ex. sécurité,
+                    traçabilité ainsi que traitement et gestion des relations
+                    clients).
+                </p>
+
+                <p class="text-sm mt-3 font-bold">4.5. Candidatures</p>
+                <p class="text-sm mt-1">
+                    Vous pouvez nous faire parvenir votre candidature pour un
+                    poste par la poste. Le dossier de candidature et toutes les
+                    données personnelles qui nous sont ainsi communiquées sont
+                    traités de manière strictement confidentielle, ne sont pas
+                    transmis des tiers et ne sont traités par nos soins que dans
+                    le but d’un traitement de votre candidature pour un emploi
+                    chez nous. Sauf accord contraire de votre part, après la fin
+                    de la procédure de candidature, votre dossier de candidature
+                    vous est renvoyé ou il est supprimé/détruit à moins qu’il ne
+                    soit soumis à une obligation légale de conservation. La base
+                    juridique pour le traitement de vos données est votre
+                    consentement, l’exécution du contrat avec vous et nos
+                    intérêts légitimes. <br /><br />Pour cela, nous traitons en
+                    particulier les informations suivantes : <br />- coordonnées
+                    (p. ex. nom, prénom, adresse, numéro de téléphone, adresse
+                    e-mail) <br />- informations personnelles (p. ex.
+                    profession, fonction, titre, entreprise de l’employeur)
+                    <br />- dossier de candidature (p. ex. lettre de motivation,
+                    certificats, diplômes, curriculum vitae) <br />-
+                    informations d’évaluation (p. ex. évaluation du recruteur,
+                    renseignements sur les références, assessments)
+                    <br /><br />Nous traitons ces données personnelles aux fins
+                    décrites, en nous appuyant sur les bases juridiques
+                    suivantes : <br />- préservation d’intérêts légitimes
+                    (p. ex. embauche de nouveau collaborateurs et
+                    collaboratrices) <br />- consentement
+                </p>
+
+                <p class="text-sm mt-3 font-bold">
+                    4.6. Fournisseurs, prestataires de services, autres
+                    partenaires contractuels
+                </p>
+                <p class="text-sm mt-1">
+                    Lorsque nous concluons un contrat avec vous dans le but que
+                    vous nous fournissiez une prestation de service, nous
+                    traitons des données personnelles vous concernant ou
+                    concernant vos collaborateurs et collaboratrices. Nous en
+                    avons besoin pour communiquer avec vous et pour utiliser vos
+                    services. Nous traitons également ces données personnelles
+                    pour vérifier l’existence d’un éventuel conflit d’intérêts
+                    et pour nous assurer que notre collaboration ne nous expose
+                    pas à des risques involontaires, p. ex. en matière de
+                    blanchiment d’argent ou de sanctions. <br /><br />Pour cela,
+                    nous traitons en particulier les informations suivantes :
+                    <br />- coordonnées (p. ex. nom, prénom, adresse, numéro de
+                    téléphone, adresse e-mail). <br />- informations
+                    personnelles (p. ex. profession, fonction, titre, entreprise
+                    de l’employeur). <br />- informations financières (p. ex.
+                    coordonnées bancaires). <br /><br />Nous traitons ces
+                    données personnelles aux fins décrites, en nous appuyant sur
+                    les bases juridiques suivantes :<br />
+                    - conclusion ou exécution d’un contrat avec la personne
+                    concernée ou en sa faveur, y c. la préparation du contrat et
+                    son exécution éventuelle <br />- préservation d’intérêts
+                    légitimes (p. ex. prévention des conflits d’intérêts,
+                    protection de l’entreprise, exercice des droits légitimes).
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    5. Technologie d’analyse et de suivi
+                </p>
+                <p class="text-sm mt-1">
+                    Nous n’utilisons pas de cookies sur notre site internet.
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    6. Analyse d’internet, analyse de newsletter
+                </p>
+                <p class="text-sm mt-1">
+                    Nous n’avons pas recours à des outils d’analyse web et aux
+                    technologies de « re-targeting ».
+                </p>
+                <p class="text-sm mt-5 font-bold">
+                    7. Transmission et traitement des données
+                </p>
+                <p class="text-sm mt-1">
+                    Nous transmettons vos données à des tiers uniquement si cela
+                    est nécessaire pour fournir notre prestation de service, si
+                    ces tiers nous fournissent une prestation de service (dans
+                    ce cas avec votre consentement préalable), si nous sommes
+                    tenus par la loi ou les autorités ou si nous avons un
+                    intérêt prépondérant à la transmission des données
+                    personnelles. Nous transmettons également vos données
+                    personnelles à des tiers si vous nous avez donné votre
+                    consentement ou si vous nous avez mandatés pour le faire.
+                    <br /><br />Les données personnelles ne sont pas toutes
+                    transmises sous forme cryptée par défaut. <br /><br />Les
+                    catégories de destinataires susceptibles de recevoir des
+                    données personnelles de notre part sont les suivantes :
+                    <br />- prestataires de services (p. ex. prestataires de
+                    services informatiques, fournisseurs d’hébergement,
+                    fournisseurs, consultants, avocats, assurances). <br />-
+                    tiers dans le cadre de nos obligations légales ou
+                    contractuelles, autorités, organismes publics, tribunaux.
+                    <br /><br />Nous concluons des contrats avec des
+                    prestataires de services qui traitent des données
+                    personnelles en notre nom. En signant ces contrats, ils
+                    s’engagent à garantir la protection des données. Nos
+                    prestataires de services se situent majoritairement en
+                    Suisse ou dans l’UE/EEE. Certaines données personnelles
+                    peuvent être transférées aux États-Unis ou,
+                    exceptionnellement, dans d’autres pays du monde. Si des
+                    données devaient être transmises dans d’autres pays dont le
+                    niveau de protection des données est insuffisant, la
+                    transmission s’effectuerait sur la base des clauses
+                    contractuelles types de l’UE ou d’autres instruments
+                    adéquats.
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    8. Durée de conservation des données personnelles
+                </p>
+                <p class="text-sm mt-1">
+                    Nous traitons et conservons vos données personnelles aussi
+                    longtemps que cela est nécessaire pour remplir nos
+                    obligations contractuelles et légales ou pour atteindre les
+                    objectifs poursuivis par le traitement des données,
+                    c’est-à-dire, par exemple, pour la durée de la relation
+                    commerciale dans son ensemble (de l’initiation, du
+                    déroulement et jusqu’à la fin d’un contrat) ainsi
+                    qu’au-delà, conformément aux obligations légales de
+                    conservation et de documentation. Ce faisant, il est
+                    possible que des données personnelles soient conservées
+                    pendant la période au cours de laquelle des droits peuvent
+                    être exercés contre notre entreprise (c.-à-d. notamment
+                    pendant la prescription légale) et dans la mesure où nous y
+                    sommes contraints par la loi ou si des intérêts commerciaux
+                    légitimes l’exigent (p. ex. à des fins de preuves et de
+                    documentation). Dès que vos données personnelles ne sont
+                    plus nécessaires aux objectifs susmentionnés, elles sont en
+                    principe et dans la mesure du possible effacées ou rendues
+                    anonymes. En ce qui concerne les données d’entreprise
+                    (p. ex. protocoles système, logs), des délais de
+                    conservation plus courts de douze mois ou moins
+                    s’appliquent.
+                </p>
+                <p class="text-sm mt-5 font-bold">9. Sécurité des données</p>
+                <p class="text-sm mt-1">
+                    Nous prenons des mesures de sécurité techniques et
+                    organisationnelles appropriées pour protéger vos données
+                    personnelles contre les accès non autorisés et toute
+                    utilisation abusive, telles l’émission de directives, les
+                    formations, les solutions de sécurité informatique et de
+                    réseau, les contrôles et restrictions d’accès, le cryptage
+                    des supports de données et des transmissions,
+                    l’anonymisation et les contrôles.
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    10. Obligation de fournir des données personnelles
+                </p>
+                <p class="text-sm mt-1">
+                    Dans le cadre de nos relations commerciales, vous devez nous
+                    fournir les données personnelles qui sont nécessaires à
+                    l’établissement et à la réalisation de la relation
+                    commerciale et à l’exécution des obligations contractuelles
+                    qui en découlent (en règle générale, vous n’avez pas
+                    d’obligation légale de nous fournir des données). Sans ces
+                    données, nous ne sommes pas en mesure de conclure un contrat
+                    avec vous (ou avec l’organisme ou la personne que vous
+                    représentez) ou de l’exécuter. Le site internet ne peut pas
+                    non plus être utilisé si certaines données permettant de
+                    sécuriser le trafic de données (p. ex. adresse IP) ne sont
+                    pas divulguées.
+                </p>
+                <p class="text-sm mt-5 font-bold">11. Vos droits</p>
+                <p class="text-sm mt-1">
+                    Dans le cadre du traitement par nos soins de données
+                    personnelles, vous avez les droits suivants : <br />- droit
+                    d’accès aux données personnelles vous concernant et
+                    sauvegardées chez nous, ainsi que le droit d’être renseigné
+                    sur le but du traitement, l’origine et les destinataires ou
+                    les catégories de destinataires à qui les données
+                    personnelles seront transmises <br />- droit de
+                    rectification si vos données ne sont pas correctes ou
+                    complètes <br />- droit à la limitation du traitement de vos
+                    données personnelles <br />- droit d’exiger la suppression
+                    des données personnelles traitées <br />- droit à la
+                    portabilité des données <br />- droit de s’opposer au
+                    traitement des données ou de révoquer à tout moment et sans
+                    justification un consentement au traitement de données
+                    personnelles <br />- droit de déposer une plainte auprès de
+                    l’autorité de surveillance compétente dans la mesure où la
+                    loi le prévoit <br /><br />Pour faire valoir ces droits,
+                    veuillez contacter l’adresse indiquée au chiffre 1.
+                    <br /><br />Veuillez noter toutefois que nous nous réservons
+                    le droit de faire valoir les restrictions prévues par la
+                    loi, par exemple lorsque nous sommes tenus de conserver ou
+                    de traiter certaines données et que nous y avons un intérêt
+                    prépondérant (dans la mesure où nous pouvons l’invoquer) ou
+                    si nous en avons besoin pour faire valoir des droits. Si des
+                    frais sont à votre charge, vous en serez informé à l’avance.
+                </p>
+
+                <p class="text-sm mt-5 font-bold">
+                    12. Modification de la déclaration de protection des données
+                </p>
+                <p class="text-sm mt-1">
+                    Nous nous réservons expressément le droit de modifier cette
+                    déclaration de protection des données à tout moment.
+                </p>
+            </div>
+        </main>
+        <footer class="bg-white border-t-2">
+            <div class="container mx-auto text-center">
+                <div class="text-gray-400 my-3 text-sm">
+                    © JUNOD TAX | 2023 |
+                    <a href="disclaimer.html"><u>disclaimer</u></a>
+                    |
+                    <a href="data.html"><u>Protection des données</u></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Grab HTML Elements
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            // Add Event Listeners
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </body>
+</html>
